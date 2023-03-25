@@ -1,0 +1,123 @@
+.contact__section {
+    height: 100vh;
+    background-color: #232140;
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.title__contact {
+    font-size: 50px;
+    margin-top: 50px;
+    font-weight: 300;
+    background-color: #232140;
+}
+
+.back__title__contact {
+    font-size: 120px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    top: 80%;
+    z-index: 0;
+    opacity: 0.1;
+    font-weight: 700;
+    color: black;
+}
+
+/* CONTACT FORM */
+
+.contact__form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 16px;
+    margin-top: 50px;
+    background-color: #232140;
+}
+
+.smallInput__container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #232140;
+}
+
+.smallInput {
+    width: 40%;
+}
+
+.large__input {
+    width: 100%;
+}
+
+input,
+textarea {
+    /* width: 500px; */
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid greenyellow;
+    transition: all 0.3s ease-in-out;
+}
+
+input:focus,
+textarea:focus {
+    border: 1.5px solid greenyellow;
+    box-shadow: 0 0 7px greenyellow;
+}
+
+input:focus-visible,
+textarea:focus-visible {
+    outline: none;
+}
+
+button[type="submit"] {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+button[type="submit"]:hover {
+    background-color: lightgrey;
+    box-shadow: 0 0 10px grey;
+    color: black;
+}
+
+button[type="submit"]:active {
+    transform: scale(0.95);
+}
+
+.error__message__form {
+    color: red;
+    font-size: 15px;
+}
+
+.message__contact__form {
+    width: 400px;
+    text-align: center;
+    background: white;
+    color: black;
+    font-size: 16px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.show {
+    opacity: 1;
+}
+
+.hide {
+    opacity: 0;
+}

@@ -1,0 +1,123 @@
+.skills__section {
+    height: 100vh;
+    background-color: #232140;
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.title__skills {
+    font-size: 50px;
+    margin-top: 50px;
+    font-weight: 300;
+    background-color: #232140;
+}
+
+.back__title__skills {
+    font-size: 120px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    top: 40%;
+    z-index: 0;
+    opacity: 0.1;
+    font-weight: 700;
+    color: black;
+}
+
+.skills__grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    background-color: #232140;
+    margin-top: 50px;
+}
+
+.skill {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #232140;
+    margin: 30px;
+}
+
+/* CARD REVERSE */
+
+.flip-card {
+    background-color: transparent;
+    width: 200px;
+    height: 200px;
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 1rem;
+}
+
+.html__flip__border {
+    box-shadow: 0 0 15px #F16529;
+    border: 1px solid #F16529;
+}
+
+.css__flip__border {
+    box-shadow: 0 0 15px #2866F0;
+    border: 1px solid #2866F0;
+}
+
+.javascript__flip__border {
+    box-shadow: 0 0 15px #DEC81A;
+    border: 1px solid #DEC81A;
+}
+
+.react__flip__border {
+    box-shadow: 0 0 15px #61DBFB;
+    border: 1px solid #61DBFB;
+}
+
+.git__flip__border {
+    box-shadow: 0 0 15px #F03B2D;
+    border: 1px solid #F03B2D;
+}
+
+.flip-card-front {
+    display: flex;
+    align-items: center;
+}
+
+.flip-card-back {
+    transform: rotateY(180deg);
+}
+
+.logo__skills {
+    width: 100px;
+}
+
+.txt__skills {
+    font-size: 20px;
+}
