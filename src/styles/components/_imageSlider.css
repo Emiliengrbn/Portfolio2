@@ -12,6 +12,11 @@
     background-size: cover; */
 }
 
+.container {
+    width: 100%;
+    height: 100%;
+}
+
 .containerStyles {
     width: 50%;
     height: 475px;
@@ -43,15 +48,81 @@
 .dotsContainerStylestwo {
     display: flex;
     justify-content: center;
-    position: absolute;
-    bottom: -25px;
-    left: 41%;
 }
 
 .dotStyletwo {
     margin: 0 3px;
     cursor: pointer;
     font-size: 20px;
+}
+
+.content__slide {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    opacity: 0;
+    top: 40%;
+    background: none;
+    /* width: 90%; */
+    right: 0%;
+}
+
+.title__slide {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.description__slide {
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+.btn__slide {
+    margin: 50px 20px;
+    /* width: 30%; */
+    border: 2px solid greenyellow;
+    border-radius: 20px;
+    padding: 10px 15px;
+    font-size: 18px;
+    background: none;
+    /* transition: 0.5s; */
+}
+
+.btn__slide:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px greenyellow;
+    transition: 0.5s;
+}
+
+/* .btn__slide:not(hover) {
+    transition: 0.5s;
+} */
+
+.title__slide,
+.description__slide {
+    background: none;
+    text-align: center;
+}
+
+.container:hover .slideStyles {
+    filter: blur(5px);
+    opacity: 0.2;
+    transition: .7s;
+}
+
+.container:hover .content__slide {
+    opacity: 1;
+    transition: .7s;
+}
+
+.container:not(hover) .slideStyles {
+    transition: .7s;
+}
+
+.container:not(hover) .content__slide {
+    transition: .7s;
 }
 
 /* @media all and (max-width: 700px) {

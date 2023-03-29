@@ -32,17 +32,23 @@ const ImageSlider = ({slides}) => {
                 <div className="rightArrowStyles" onClick={goToNext}>
                 〉
                 </div>
-                <div className="slideStyles" style={{backgroundImage: `url(${slides[currentIndex].cover})`}}>
-                    {/* <h3 className="title__slide">{slides[currentIndex].title}</h3>
-                    <p className="description__slide">{slides[currentIndex].description}</p> */}
-                </div>
-                    <div className="dotsContainerStylestwo">
-                        {slides.map((slide, slideIndex) => (
-                            <div key={slideIndex} className="dotStyletwo" onClick={() => goToSlide(slideIndex)}>
-                                ●
-                            </div>
-                        ))}
+                <div className="container">
+
+                    <div className="slideStyles" style={{backgroundImage: `url(${slides[currentIndex].cover})`}}>
                     </div>
+                        <div className="content__slide">
+                            <h4 className="title__slide">{slides[currentIndex].title}</h4>
+                            <p className="description__slide">{slides[currentIndex].description}</p>
+                            <a href={slides[currentIndex].link} target="_blank" rel="noreferrer"className="btn__slide">Voir le code</a>
+                        </div>
+                        <div className="dotsContainerStylestwo">
+                            {slides.map((slide, slideIndex) => (
+                                <div key={slideIndex} className="dotStyletwo" onClick={() => goToSlide(slideIndex)}>
+                                    ●
+                                </div>
+                            ))}
+                        </div>
+                </div>
             </div>
         )
     } else {

@@ -31,15 +31,12 @@ header {
     border-radius: 20px;
     padding: 10px 15px;
     font-size: 18px;
+    transition: 0.5s;
 }
 
 .navlink:hover {
     transform: scale(1.1);
     box-shadow: 0 0 15px greenyellow;
-    transition: 0.5s;
-}
-
-.navlink:not(hover) {
     transition: 0.5s;
 }
 
