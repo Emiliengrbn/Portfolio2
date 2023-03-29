@@ -4,6 +4,8 @@ const cssLogo = require("../images/logo_css.png")
 const jsLogo = require("../images/logo_js.png")
 const reactLogo = require("../images/logo_react.png")
 const gitLogo = require("../images/logo_git.png")
+const nodejsLogo = require("../images/logo_nodejs.png")
+const mongodbLogo = require("../images/logo_mongodb.png")
 
 const Skills = () => {
   return (
@@ -60,6 +62,26 @@ const Skills = () => {
             </div>
             <div class="flip-card-back git__flip__border">
               <p class="git__txt txt__skills">Git</p>
+            </div>
+          </div>
+        </div>
+        <div class="nodejs__skill skill flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front nodejs__flip__border">
+              <img src={nodejsLogo} alt="logo nodejs" class="nodejs__logo logo__skills" />
+            </div>
+            <div class="flip-card-back nodejs__flip__border">
+              <p class="nodejs__txt txt__skills">Nodejs</p>
+            </div>
+          </div>
+        </div>
+        <div class="mongobd__skill skill flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front mongodb__flip__border">
+              <img src={mongodbLogo} alt="logo mongobd" class="mongobd__logo logo__skills" />
+            </div>
+            <div class="flip-card-back mongodb__flip__border">
+              <p class="mongobd__txt txt__skills">Mongo DB</p>
             </div>
           </div>
         </div>

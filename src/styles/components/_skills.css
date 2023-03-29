@@ -105,6 +105,16 @@
     border: 1px solid #F03B2D;
 }
 
+.nodejs__flip__border {
+    box-shadow: 0 0 15px #5C9853;
+    border: 1px solid #5C9853;
+}
+
+.mongodb__flip__border {
+    box-shadow: 0 0 15px #00ED64;
+    border: 1px solid #00ED64;
+}
+
 .flip-card-front {
     display: flex;
     align-items: center;

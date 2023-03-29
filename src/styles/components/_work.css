@@ -24,3 +24,17 @@
     font-weight: 700;
     color: black;
 }
+
+.container__projects {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.card__projects {
+    width: 25%;
+}
+
+.logo__projects {
+    width: 100%;
+}
