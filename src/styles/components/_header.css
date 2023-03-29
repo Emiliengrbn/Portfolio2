@@ -1,10 +1,12 @@
-header {
+.header {
+    width: 18%;
     display: flex;
     flex-direction: column;
     border-right: 2px solid greenyellow;
     position: fixed;
     height: 100%;
     padding: 20px;
+    z-index: 1000;
 }
 
 .firstPart__header {
@@ -40,14 +42,16 @@ header {
     transition: 0.5s;
 }
 
+.navlink:active a {
+    transition: .7s;
+}
+
 .wrapper {
     display: flex;
     list-style: none;
-    height: 120px;
     width: 100%;
-    padding-top: 20px;
     left: 0;
-    font-family: "Poppins", sans-serif;
+    bottom: 20px;
     justify-content: center;
     position: absolute;
     align-items: center;
@@ -119,22 +123,11 @@ header {
     text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
 }
 
-.wrapper .linkedin:hover .tooltip,
-.wrapper .linkedin:hover .tooltip::before {
-    background: #24292F;
-    color: #fff;
-}
-
-.wrapper .github:hover .tooltip,
-.wrapper .github:hover .tooltip::before {
-    background: #24292F;
-    color: #fff;
-}
-
-.wrapper .cv:hover .tooltip,
-.wrapper .cv:hover .tooltip::before {
-    background: #24292F;
-    color: #fff;
+.wrapper .icon:hover .tooltip,
+.wrapper .icon:hover .tooltip::before {
+    background-color: greenyellow;
+    color: #232140;
+    font-weight: 600;
 }
 
 .wrapper .icon:hover {
@@ -146,10 +139,110 @@ header {
     transition: ease-in-out 0.2s;
 }
 
-@media all and (max-width: 1200px) {
-    header {
-        display: none;
+.leftbar__burger {
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: none;
+    color: inherit;
+    z-index: 2;
+}
+
+@media screen and (max-width:1200px) {
+    .header {
+        position: fixed;
+        left: -100vw;
+        bottom: 0;
+        width: 0;
+        height: 100vh;
+        padding: 2rem;
+        visibility: hidden;
+        transition: all .8s ease-out;
     }
+
+    .show-leftbar .header {
+        left: 0;
+        width: 275px;
+        visibility: visible;
+        z-index: 2;
+    }
+
+    .leftbar__burger {
+        display: block;
+        position: fixed;
+        top: 1rem;
+        left: 1rem;
+        z-index: 200;
+    }
+
+    .leftbar__burger:hover {
+        cursor: pointer;
+    }
+
+    .burger-bar,
+    .burger-bar::before,
+    .burger-bar::after {
+        display: block;
+        width: 40px;
+        height: 3px;
+        position: relative;
+        border-radius: 3px;
+        background: greenyellow;
+        transition: all .4s ease-in-out;
+    }
+
+    .burger-bar::before,
+    .burger-bar::after {
+        content: "";
+        position: absolute;
+        left: 0;
+    }
+
+    .burger-bar::before {
+        transform: translateY(-12px);
+    }
+
+    .burger-bar::after {
+        transform: translateY(12px);
+    }
+
+    .show-leftbar .burger-bar {
+        background: transparent;
+    }
+
+    .show-leftbar .burger-bar::before {
+        transform: rotate(45deg);
+    }
+
+    .show-leftbar .burger-bar::after {
+        transform: rotate(-45deg);
+    }
+
+    .content__list__leftbar {
+        transform: translateY(100vh);
+    }
+
+    .content__list__leftbar a {
+        padding-bottom: 0;
+    }
+
+    .show-leftbar .content__list__leftbar {
+        transform: translateY(0);
+    }
+
+    .third__part__leftbar {
+        transform: translateY(100vh);
+    }
+
+    .show-leftbar .third__part__leftbar {
+        transform: translateY(0);
+    }
+}
+
+@media all and (max-width: 1200px) {
+    /* header {
+        width: 0%;
+    } */
 
     main,
     footer {

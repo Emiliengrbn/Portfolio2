@@ -32,6 +32,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    width: 50%;
     font-size: 16px;
     margin-top: 50px;
     background-color: #232140;
@@ -44,8 +45,15 @@
     background-color: #232140;
 }
 
+.small__input__message {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+    background-color: #232140;
+}
+
 .smallInput {
-    width: 40%;
+    width: 100%;
 }
 
 .large__input {
@@ -60,6 +68,7 @@ textarea {
     border-radius: 5px;
     border: 1px solid greenyellow;
     transition: all 0.3s ease-in-out;
+    background-color: #232140;
 }
 
 input:focus,
@@ -83,11 +92,12 @@ button[type="submit"] {
     font-size: 16px;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
+    font-weight: 500;
 }
 
 button[type="submit"]:hover {
-    background-color: lightgrey;
-    box-shadow: 0 0 10px grey;
+    background-color: greenyellow;
+    box-shadow: 0 0 10px greenyellow;
     color: black;
 }
 
@@ -97,7 +107,13 @@ button[type="submit"]:active {
 
 .error__message__form {
     color: red;
-    font-size: 15px;
+    font-size: 18px;
+    background-color: #232140;
+}
+
+.star__message {
+    color: grey;
+    background-color: #232140;
 }
 
 .message__contact__form {

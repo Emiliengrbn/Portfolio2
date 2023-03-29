@@ -113,24 +113,30 @@ const Contact = () => {
     </h2>
       <form className='contact__form' ref={form} onSubmit={handleSubmit}>
         <div className="smallInput__container">
-          <input className='input__contact__form smallInput'
-            placeholder='Nom *'
-            type="text"
-            name="user_lastName"
-            value={form.user_lastName}
-            onChange={handleChange}
+          <div className="small__input__message">
+            <input className='input__contact__form smallInput'
+              placeholder='Nom *'
+              type="text"
+              name="user_lastName"
+              value={form.user_lastName}
+              onChange={handleChange}
             />
             <p className='error__message__form'>{ formErrors.user_lastName }</p>
-          <input className='input__contact__form smallInput'
-            placeholder='Prénom *'
-            type="text"
-            name="user_firstName"
-            value={form.user_firstName}
-            onChange={handleChange}
+          </div>
+          <div className="small__input__message">
+            <input className='input__contact__form smallInput'
+              placeholder='Prénom *'
+              type="text"
+              name="user_firstName"
+              value={form.user_firstName}
+              onChange={handleChange}
             />
             <p className='error__message__form'>{ formErrors.user_firstName }</p>
           </div>
-          <div className="smallInput__container">
+
+        </div>
+        <div className="smallInput__container">
+          <div className="small__input__message">
             <input className='input__contact__form smallInput'
               placeholder='N° téléphone'
               type="tel"
@@ -139,6 +145,8 @@ const Contact = () => {
               onChange={handleChange}
               />
               <p className='error__message__form'>{ formErrors.user_phone }</p>
+          </div>
+          <div className="small__input__message">
             <input className='input__contact__form smallInput'
               placeholder='Email *'
               type="text"
@@ -148,6 +156,7 @@ const Contact = () => {
               />
               <p className='error__message__form'>{ formErrors.user_email }</p>
           </div>
+        </div>
         <input className='input__contact__form large__input'
           placeholder='Objet *'
           type="text"
@@ -163,6 +172,7 @@ const Contact = () => {
           onChange={handleChange}
           />
           <p className='error__message__form'>{ formErrors.message }</p>
+          <p className="star__message">* Champs obligatoires</p>
         <button className='input__submit__contact__form' 
           type="submit"
           value="Envoyer"

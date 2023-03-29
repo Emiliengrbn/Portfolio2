@@ -41,13 +41,13 @@ const ImageSlider = ({slides}) => {
                             <p className="description__slide">{slides[currentIndex].description}</p>
                             <a href={slides[currentIndex].link} target="_blank" rel="noreferrer"className="btn__slide">Voir le code</a>
                         </div>
-                        <div className="dotsContainerStylestwo">
+                        {/* <div className="dotsContainerStylestwo">
                             {slides.map((slide, slideIndex) => (
                                 <div key={slideIndex} className="dotStyletwo" onClick={() => goToSlide(slideIndex)}>
                                     ●
                                 </div>
                             ))}
-                        </div>
+                        </div> */}
                 </div>
             </div>
         )
