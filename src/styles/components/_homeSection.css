@@ -1,4 +1,32 @@
 .homeSection {
     height: 100vh;
     background-color: #232140;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title__home__section {
+    font-size: 100px;
+    font-weight: 500;
+    background-color: #232140;
+    text-shadow: -15px 15px black;
+}
+
+.back__title__home__section {
+    font-size: 120px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    top: 5%;
+    z-index: 0;
+    opacity: 0.1;
+    font-weight: 700;
+    color: black;
+}
+
+.subtitle__home__section {
+    background-color: #232140;
 }

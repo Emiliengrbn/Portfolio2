@@ -1,6 +1,7 @@
 @import "./_settings.css";
 @import "./components/_header.css";
 @import "./components/_homeSection.css";
+@import "./components/_backgroungHomeSection.css";
 @import "./components/_introduction.css";
 @import "./components/_skills.css";
 @import "./components/_work.css";
