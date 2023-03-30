@@ -6,7 +6,6 @@ const Introduction = () => {
     <div className="introduction__section" id="introduction">
       <h2 className="title__introduction">
         A propos de moi
-        <span className="back__title__introduction"> Qui suis-je ?</span>
       </h2>
       <div className="content__introduction">
         <img src={memoji} alt="" className="memoji" />

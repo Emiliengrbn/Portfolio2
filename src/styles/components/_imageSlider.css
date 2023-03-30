@@ -4,12 +4,11 @@
 }
 
 .slideStyles {
-    width: 80%;
     height: 100%;
     border-radius: 10px;
     margin: auto;
-    /* background-position: center;
-    background-size: cover; */
+    background-position: center;
+    background-size: cover;
 }
 
 .container {
@@ -20,7 +19,7 @@
 .containerStyles {
     width: 50%;
     height: 475px;
-    margin: 55px 0 15px 0;
+    margin: 75px 0;
 }
 
 .leftArrowStyles {
@@ -32,6 +31,7 @@
     color: #fff;
     z-index: 1;
     cursor: pointer;
+    background-color: none;
 }
 
 .rightArrowStyles {
@@ -43,18 +43,8 @@
     color: #fff;
     z-index: 1;
     cursor: pointer;
+    background-color: none;
 }
-
-/* .dotsContainerStylestwo {
-    display: flex;
-    justify-content: center;
-}
-
-.dotStyletwo {
-    margin: 0 3px;
-    cursor: pointer;
-    font-size: 20px;
-} */
 
 .content__slide {
     position: absolute;

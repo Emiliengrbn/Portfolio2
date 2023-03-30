@@ -12,7 +12,6 @@ const Skills = () => {
     <div className="skills__section" id="skills">
       <h2 className="title__skills">
         Compétences
-        <span className="back__title__skills"> Techniques</span>
       </h2>
       <div className="skills__grid">
         <div class="html__skill skill flip-card">

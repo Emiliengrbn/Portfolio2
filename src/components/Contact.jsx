@@ -108,8 +108,7 @@ const Contact = () => {
   return (
     <div className="contact__section" id="contact">
     <h2 className="title__contact">
-      Travaillons ensemble
-      <span className="back__title__contact">Contactez moi</span>
+      Contactez-moi
     </h2>
       <form className='contact__form' ref={form} onSubmit={handleSubmit}>
         <div className="smallInput__container">

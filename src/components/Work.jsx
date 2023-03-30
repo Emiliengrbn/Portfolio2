@@ -30,7 +30,6 @@ const Work = () => {
     <div className="work__section" id="work">
     <h2 className="title__work">
       Projets
-      <span className="back__title__work">Travaux</span>
     </h2>
     <div className="containerStyles">
         <ImageSlider slides={slides} />

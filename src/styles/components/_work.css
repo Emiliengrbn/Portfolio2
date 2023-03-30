@@ -1,5 +1,5 @@
 .work__section {
-    height: 100vh;
+    /* height: 100vh; */
     display: flex;
     flex-direction: column;
     align-items: center
@@ -8,27 +8,15 @@
 .title__work {
     font-size: 50px;
     margin-top: 50px;
-    font-weight: 300;
-    background-color: #232140;
-}
-
-.back__title__work {
-    font-size: 120px;
-    position: absolute;
-    left: 0;
-    right: 0;
-    text-align: center;
-    top: 60%;
-    z-index: 0;
-    opacity: 0.1;
-    font-weight: 700;
-    color: black;
+    font-weight: 500;
+    text-shadow: -15px 15px 10px black;
 }
 
 .container__projects {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    margin: 75px 0;
 }
 
 .card__projects {
