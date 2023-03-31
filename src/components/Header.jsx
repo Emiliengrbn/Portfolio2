@@ -38,19 +38,19 @@ const Header = () => {
                 </li>
             </ul>
             <ul className="wrapper">
-                <a href="https://www.linkedin.com/in/emilien-gerbouin/" target="_blank" rel="noreferrer">
+                <a href="https://www.linkedin.com/in/emilien-gerbouin/" target="_blank" rel="noreferrer" className="link__wrapper">
                     <li className="icon linkedin">
                         <span className="tooltip">Linkedin</span>
                         <img src={Linkedin} alt="linkedin" className="linkedin__logo"/>
                     </li>
                 </a>
-                <a href="https://github.com/Emiliengrbn" target="_blank" rel="noreferrer">
+                <a href="https://github.com/Emiliengrbn" target="_blank" rel="noreferrer" className="link__wrapper">
                     <li className="icon github">
                         <span className="tooltip">Github</span>
                         <img src={Github} alt="github" className="github__logo"/>
                     </li>
                 </a>
-                <a href={PageCV} target="_blank" rel="noreferrer">
+                <a href={PageCV} target="_blank" rel="noreferrer" className="link__wrapper">
                     <li className="icon cv">
                         <span className="tooltip">CV</span>
                         <img src={CV} alt="cv"  className="cv__logo"/>

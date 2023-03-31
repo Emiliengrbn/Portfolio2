@@ -17,3 +17,14 @@
 .subtitle__home__section {
     background-color: #232140;
 }
+
+@media all and (min-width: 768px) {
+    .title__home__section {
+        font-size: 115px;
+    }
+
+    .subtitle__home__section {
+        font-size: 30px;
+        font-weight: 500;
+    }
+}

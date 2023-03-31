@@ -3,7 +3,8 @@
     background-color: #232140;
     display: flex;
     flex-direction: column;
-    align-items: center
+    align-items: center;
+    padding-bottom: 75px;
 }
 
 .title__contact {

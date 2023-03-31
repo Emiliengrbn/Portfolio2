@@ -39,3 +39,15 @@
         flex-direction: column;
     }
 }
+
+@media all and (min-width: 768px) {
+    .memoji {
+        margin-bottom: 75px;
+        width: 40%;
+    }
+
+    .presentation {
+        font-size: 30px;
+        width: 75%;
+    }
+}

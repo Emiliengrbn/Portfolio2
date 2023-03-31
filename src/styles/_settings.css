@@ -52,3 +52,12 @@ li {
 a {
     text-decoration: none;
 }
+
+
+@media all and (max-width: 1200px) {
+
+    main,
+    footer {
+        width: 100%;
+    }
+}
