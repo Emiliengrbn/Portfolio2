@@ -10,7 +10,7 @@ const mongodbLogo = require("../images/logo_mongodb.png")
 const Skills = () => {
   return (
     <div className="skills__section" id="skills">
-      <h2 className="title__skills">
+      <h2 className="title__skills title__section">
         Compétences
       </h2>
       <div className="skills__grid">

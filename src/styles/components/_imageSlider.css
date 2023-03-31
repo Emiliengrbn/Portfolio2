@@ -31,7 +31,7 @@
     color: #fff;
     z-index: 1;
     cursor: pointer;
-    background-color: none;
+    background: none;
 }
 
 .rightArrowStyles {
@@ -43,7 +43,7 @@
     color: #fff;
     z-index: 1;
     cursor: pointer;
-    background-color: none;
+    background: none;
 }
 
 .content__slide {

@@ -239,7 +239,7 @@
     }
 }
 
-@media all and (min-width: 768px) {
+@media all and (max-width: 768px) {
     .header {
         padding-top: 100px;
         justify-content: space-around;
@@ -264,12 +264,12 @@
 
     .wrapper {
         position: initial;
-        flex-direction: column;
+        /* flex-direction: column; */
     }
 
     .wrapper .icon {
-        width: 115px;
-        height: 115px;
+        width: 70px;
+        height: 70px;
     }
 
     .wrapper .icon:hover {
@@ -278,15 +278,11 @@
     }
 
     .icon img {
-        width: 60px;
+        width: 35px;
     }
 
     .tooltip {
         display: none;
-    }
-
-    .link__wrapper {
-        margin: 10px 0;
     }
 
     .leftbar__burger {

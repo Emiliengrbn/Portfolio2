@@ -40,7 +40,7 @@
     }
 }
 
-@media all and (min-width: 768px) {
+@media all and (max-width: 768px) {
     .memoji {
         margin-bottom: 75px;
         width: 40%;

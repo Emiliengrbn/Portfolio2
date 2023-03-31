@@ -4,7 +4,7 @@ const memoji = require("../images/memoji.png")
 const Introduction = () => {
   return (
     <div className="introduction__section" id="introduction">
-      <h2 className="title__introduction">
+      <h2 className="title__introduction title__section">
         A propos de moi
       </h2>
       <div className="content__introduction">

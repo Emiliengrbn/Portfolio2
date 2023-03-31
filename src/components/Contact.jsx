@@ -107,7 +107,7 @@ const Contact = () => {
 
   return (
     <div className="contact__section" id="contact">
-    <h2 className="title__contact">
+    <h2 className="title__contact title__section">
       Contactez-moi
     </h2>
       <form className='contact__form' ref={form} onSubmit={handleSubmit}>

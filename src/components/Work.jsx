@@ -28,23 +28,12 @@ const Work = () => {
 
   return (
     <div className="work__section" id="work">
-    <h2 className="title__work">
+    <h2 className="title__work title__section">
       Projets
     </h2>
     <div className="containerStyles">
         <ImageSlider slides={slides} />
     </div>
-    {/* <div className="container__projects">
-      {projects.map((p) => (
-        <div className="card__projects">
-          <Link to={"/"} >
-            <img className="logo__projects" src={p.cover} alt="logo"></img>
-            <h4 className="title__projects">{p.title}</h4>
-            <p className="description__projects">{p.description}</p>
-          </Link>
-        </div>
-      ))}
-    </div> */}
     </div>
   );
 };
