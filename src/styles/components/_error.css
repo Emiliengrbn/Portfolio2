@@ -1,0 +1,28 @@
+.main_error {
+    text-align: center;
+    align-items: center;
+}
+
+.error_404 {
+    margin-top: 150px;
+    font-size: 200px;
+}
+
+.message_error {
+    font-size: 25px;
+    margin-bottom: 150px;
+}
+
+.link_home {
+    font-size: 20px;
+    padding: 15px;
+    border-radius: 20px;
+    border: 2px solid greenyellow;
+    box-shadow: 0px 0px 10px greenyellow;
+}
+
+@media all and (max-width: 700px) {
+    .error_404 {
+        font-size: 150px;
+    }
+}
