@@ -11,6 +11,18 @@
     font-size: 17px;
 }
 
-footer {
-    display: none;
+@media all and (max-width: 768px) {
+    .coordinate {
+        flex-direction: column;
+    }
+
+    .footer__element {
+        padding: 10px 20px;
+        font-size: 17px;
+    }
+
+    .copyright {
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
 }

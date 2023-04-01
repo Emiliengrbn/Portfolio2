@@ -243,54 +243,27 @@
 
 @media all and (max-width: 768px) {
     .header {
-        width: 100%;
+        justify-content: space-around;
+    }
+
+    .logo__header {
+        padding-bottom: 5px;
     }
 
     .navlink {
-        margin: 35px 20px;
+        margin: 25px 20px;
     }
 
-    /* .logo__header {
-        font-size: 40px;
-    } */
-
-    /* .title__header {
-        font-size: 30px;
-    } */
-
-    /* .subtitle__header {
-        font-size: 25px;
-        padding-top: 15px;
-    } */
-
-    /* .navlink {
-        font-size: 27px;
-    } */
-
-    /* .wrapper {
+    .wrapper {
         position: initial;
-    } */
-
-    /* .wrapper .icon {
-        width: 70px;
-        height: 70px;
-    } */
+    }
 
     .wrapper .icon:hover {
         transform: none;
         transition: none;
     }
 
-    /* .icon img {
-        width: 35px;
-    } */
-
     .tooltip {
         display: none;
     }
-
-    /* .leftbar__burger {
-        top: 5rem;
-        left: 3rem;
-    } */
 }
