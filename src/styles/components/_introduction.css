@@ -34,13 +34,12 @@
     text-decoration: underline greenyellow;
 }
 
-@media all and (max-width: 1100px) {
+@media all and (max-width: 768px) {
+
     .content__introduction {
         flex-direction: column;
     }
-}
 
-@media all and (max-width: 768px) {
     .memoji {
         margin-bottom: 75px;
         width: 60%;
