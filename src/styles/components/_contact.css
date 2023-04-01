@@ -115,7 +115,7 @@ button[type="submit"]:active {
     border: 2px solid black;
     border-radius: 5px;
     opacity: 0;
-    transition: opacity 0.5s ease-in-out;
+    transition: opacity 1s ease-in-out;
 }
 
 .show {
@@ -124,4 +124,27 @@ button[type="submit"]:active {
 
 .hide {
     opacity: 0;
+}
+
+@media all and (max-width: 768px) {
+
+    .contact__form {
+        width: 80%;
+    }
+
+    .responsive__section {
+        flex-direction: column;
+    }
+
+    .responsive__section__message {
+        width: 100%;
+    }
+
+    .error__message__form {
+        font-size: 16px;
+    }
+
+    .message__contact__form {
+        width: 100%;
+    }
 }

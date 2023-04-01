@@ -72,10 +72,7 @@ const Contact = () => {
     } else {
       user_lastName = true
     }
-    if(!values.user_phone) {
-      errors.user_phone = "J'ai besoin de votre numéro de téléphone!"
-      user_phone = false
-    } else if (!regexPhone.test(values.user_phone)) {
+    if (!regexPhone.test(values.user_phone)) {
       errors.user_phone = "Ce n'est pas un numéro de téléphone valide ..."
       user_phone = false
     } else {
