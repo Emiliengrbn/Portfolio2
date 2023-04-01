@@ -18,17 +18,20 @@
     background-color: #232140;
 }
 
-/* @media all and (max-width: 768px) {
+@media all and (max-width: 768px) {
+    .homeSection {
+        height: 105vh;
+    }
+
     .title__home__section {
-        font-size: 115px;
+        font-size: 75px;
     }
 
     .subtitle__home__section {
-        font-size: 30px;
-        font-weight: 500;
+        width: 75%;
     }
 
-    .title__section {
+    /* .title__section {
         font-size: 70px;
-    }
-} */
+    } */
+}
