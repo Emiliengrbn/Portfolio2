@@ -10,3 +10,7 @@
     justify-content: center;
     font-size: 17px;
 }
+
+footer {
+    display: none;
+}

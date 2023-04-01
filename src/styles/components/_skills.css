@@ -119,3 +119,14 @@
 .txt__skills {
     font-size: 20px;
 }
+
+@media all and (max-width: 768px) {
+    .flip-card {
+        width: 120px;
+        height: 120px;
+    }
+
+    .logo__skills {
+        width: 70px;
+    }
+}
