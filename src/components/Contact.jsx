@@ -72,8 +72,10 @@ const Contact = () => {
     } else {
       user_lastName = true
     }
-    if (!regexPhone.test(values.user_phone)) {
-      errors.user_phone = "Ce n'est pas un numéro de téléphone valide ..."
+    if(!values.user_phone) {
+      user_phone = true
+    } else if (!regexPhone.test(values.user_phone)) {
+      errors.user_phone = "Ce n'est pas un n° valide ..."
       user_phone = false
     } else {
       user_phone = true
@@ -131,8 +133,8 @@ const Contact = () => {
           </div>
 
         </div>
-        <div className="smallInput__container">
-          <div className="small__input__message">
+        <div className="smallInput__container responsive__section">
+          <div className="small__input__message responsive__section__message">
             <input className='input__contact__form smallInput'
               placeholder='N° téléphone'
               type="tel"
@@ -142,7 +144,7 @@ const Contact = () => {
               />
               <p className='error__message__form'>{ formErrors.user_phone }</p>
           </div>
-          <div className="small__input__message">
+          <div className="small__input__message responsive__section__message">
             <input className='input__contact__form smallInput'
               placeholder='Email *'
               type="text"
