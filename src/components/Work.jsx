@@ -10,19 +10,11 @@ const kasa = require ("../images/kasa_project.png")
 const Work = () => {
 
   const slides = [
-    { cover: ohmyfood, title: "Ohmyfood - Projet de formation", description: "Dévouverte HTML et CSS, intégration de maquette et ajout d'animations", link: "https://github.com/Emiliengrbn/P3_ohmyfood"},
+    { cover: ohmyfood, title: "Ohmyfood - Projet de formation", description: "Dévouverte HTML et CSS, intégration de maquettes et ajout d'animations", link: "https://github.com/Emiliengrbn/P3_ohmyfood"},
     { cover: panthere, title: "Panthere - Projet de formation", description: "Refonte du site existant avec les bonnes pratiques d'accéssibilité et de SEO", link: "https://github.com/Emiliengrbn/agence_la_panthere"},
-    { cover: kanap, title: "Kanap - Projet de formation", description: "Découverte du JavaScript et utilisation d'un API pour un affichage dynamique", link: "https://github.com/Emiliengrbn/P5_KANAP"},
+    { cover: kanap, title: "Kanap - Projet de formation", description: "Découverte du JavaScript et utilisation d'une API pour un affichage dynamique", link: "https://github.com/Emiliengrbn/P5_KANAP"},
     { cover: piiquante, title: "Piiquante - Projet de formation", description: "Création d'un serveur et d'une API avec NodeJs, Express et Mongo DB", link: "https://github.com/Emiliengrbn/P6_piiquante"},
-    { cover: kasa, title: "Kasa - Projet de formation", description: "Création d'un application web avec React", link: "https://github.com/Emiliengrbn/P7_KASA"}
-  ]
-
-  const projects = [
-    { cover: ohmyfood, title: "Ohmyfood - Projet de formation", description: "Dévouverte HTML et CSS, intégration de maquette et ajout d'animations"},
-    { cover: panthere, title: "Panthere - Projet de formation", description: "Refonte du site existant avec les bonnes pratiques d'accéssibilité et de SEO"},
-    { cover: kanap, title: "Kanap - Projet de formation", description: "Découverte du JavaScript et utilisation d'un API pour un affichage dynamique"},
-    { cover: piiquante, title: "Piiquante - Projet de formation", description: "Création d'un serveur et d'une API avec NodeJs, Express et Mongo DB"},
-    { cover: kasa, title: "Kasa - Projet de formation", description: "Création d'un application web avec React"},
+    { cover: kasa, title: "Kasa - Projet de formation", description: "Création d'une application web avec React", link: "https://github.com/Emiliengrbn/P7_KASA"}
   ]
 
 

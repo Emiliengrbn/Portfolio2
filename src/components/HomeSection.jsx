@@ -4,7 +4,7 @@ import BackgroundHomeSection from "./BackgroundHomeSection";
 const HomeSection = () => {
   return (
     <div className="homeSection" id="homeSection">
-      <BackgroundHomeSection />
+      {/* <BackgroundHomeSection /> */}
       <h1 className="title__home__section">
         Emilien <br/> Gerbouin
       </h1>
